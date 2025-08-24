@@ -32,7 +32,7 @@ const Register = () => {
 
     try {
       const RegisterUrl =
-        "https://winajaya-nqf7.vercel.app/api/karyawan/register";
+        "https://winajaya-production.up.railway.app/api/karyawan/register";
       const response = await axios.post(
         RegisterUrl,
         {

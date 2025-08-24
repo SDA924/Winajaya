@@ -18,7 +18,7 @@ const Dashboard = () => {
   const fetchData = async () => {
     try {
       const res = await fetch(
-        "https://winajaya-nqf7.vercel.app/api/absensi/getAbsensiTable",
+        "https://winajaya-production.up.railway.app/api/absensi/getAbsensiTable",
         {
           method: "GET",
           headers: {
@@ -45,7 +45,7 @@ const Dashboard = () => {
   const handleApprove = async (absensiId) => {
     try {
       const res = await fetch(
-        "https://winajaya-nqf7.vercel.app/api/validation/Approve",
+        "https://winajaya-production.up.railway.app/api/validation/Approve",
         {
           method: "POST",
           headers: {
@@ -71,7 +71,7 @@ const Dashboard = () => {
   const handleReject = async (absensiId) => {
     try {
       const res = await fetch(
-        "https://winajaya-nqf7.vercel.app/api/validation/Reject",
+        "https://winajaya-production.up.railway.app/api/validation/Reject",
         {
           method: "POST",
           headers: {

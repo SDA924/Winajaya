@@ -23,7 +23,8 @@ const LoginKaryawan = () => {
     setError("");
 
     try {
-      const loginUrl = "https://winajaya-58j6.vercel.app/api/auth/login";
+      const loginUrl =
+        "https://winajaya-production.up.railway.app/api/auth/login";
       const response = await axios.post(loginUrl, {
         withCredentials: true,
         email: formData.email,
@@ -35,7 +36,7 @@ const LoginKaryawan = () => {
         return;
       }
       const checkAbsen = await axios.get(
-        `https://winajaya-58j6.vercel.app/api/absensi/checkAbsen/${response.data.user.userId}`,
+        `https://winajaya-production.up.railway.app/api/absensi/checkAbsen/${response.data.user.userId}`,
         {
           withCredentials: true,
           headers: {

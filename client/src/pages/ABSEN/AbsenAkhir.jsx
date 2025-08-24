@@ -113,7 +113,7 @@ const AbsenAkhir = () => {
       const today = new Date().toISOString().slice(0, 10);
 
       const res = await fetch(
-        "https://winajaya-nqf7.vercel.app/api/izinlembur/insertsuratlembur",
+        "https://winajaya-production.up.railway.app/api/izinlembur/insertsuratlembur",
         {
           method: "POST",
           headers: {
@@ -153,7 +153,7 @@ const AbsenAkhir = () => {
 
     try {
       const resAbsensi = await fetch(
-        `https://winajaya-nqf7.vercel.app/api/absensi/getAbsensibyId/${userId}`,
+        `https://winajaya-production.up.railway.app/api/absensi/getAbsensibyId/${userId}`,
         {
           method: "GET",
           headers: {
@@ -165,7 +165,7 @@ const AbsenAkhir = () => {
       const dataAbsensi = await resAbsensi.json();
 
       const res = await fetch(
-        "https://winajaya-nqf7.vercel.app/api/absensi/updateAbsensi",
+        "https://winajaya-production.up.railway.app/api/absensi/updateAbsensi",
         {
           method: "POST",
           headers: {
